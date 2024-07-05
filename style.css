@@ -1,0 +1,246 @@
+/*Configuração Padrão de início*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Chamamos o body para limitar o tamanho da altura e tamanho da página*/
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.cabecalho {
+    background-color: rgb(78, 135, 168); /*  */
+    
+    padding: 70px; /*  */
+    
+    display: flex; /*  */
+    }
+    
+    .cabecalho {
+    display: flex;
+    justify-content: end;
+    }
+    
+    .cabecalho li {
+    list-style: none;
+    margin-left: 20px;
+    }
+    
+    .cabecalho li a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .cabecalho a:hover {
+    color: blue;
+    transition: 0.7s;
+    }
+
+#sessao {
+    padding: 15rem;
+    background: rgb(2,0,36);
+background: linear-gradient(185deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
+}
+
+
+
+h2{
+    font-size: 3em; /* 48px */
+    color: white;
+    
+}
+
+#sessao p{
+    font-size: 2.3em;
+    margin: 20px 0;
+    color: white;
+}
+
+#sessao button{
+    padding: 22px;
+    border-radius: 50px;
+    border-color: rgb(19, 153, 108);
+    width: 20em;
+    cursor: pointer;
+    color: rgb(19, 153, 108);
+}
+
+#sessao button:hover{
+    color: white;
+    border-color: white;
+    background-color: rgb(19, 153, 108);
+    transition: 0.8s;
+}
+
+#app{
+    padding: 15rem;
+    background-color: rgb(226, 233, 233);
+    display: flex;
+    justify-content: space-around;
+}
+
+#app div button{
+    padding: 22px;
+    border-radius: 50px;
+    border-color: rgb(19, 153, 108);
+    width: 20em;
+    cursor: pointer; 
+    color: rgb(19, 153, 108);
+}
+
+#app div button:hover{
+    border-color: white;
+    color: white;
+    background-color: rgb(19, 153, 108);
+    transition: 0.8s;
+}
+
+#app div p{
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+#app div img {
+    width: 25rem;
+    height: 25rem;
+    margin-top: -70px;
+    margin-left: 50px;
+}
+
+#container{
+    padding: 15rem;
+    background-color: rgb(226, 233, 233);
+}
+
+#container h2{
+    font-size: 40px;
+    text-align: center;
+    color: rgba(0, 0, 255, 0.699);
+    margin-top: -20rem;
+    margin-bottom: 2rem;
+}
+
+#container p{
+    font-size: 1.4rem;
+    color: rgb(34, 34, 74,);
+    margin-bottom: 2.4rem;
+    text-align: justify;
+}
+
+#container button{
+    padding: 15px;
+    border-radius: 3rem;
+    width: 12rem;
+    margin-bottom: 50px;
+    border-color: rgb(19, 153, 108);
+    cursor: pointer;
+    color: brgb(19, 153, 108)lue;
+}
+
+#container button:hover{
+    color: white;
+    border-color: white;
+    background-color: rgb(19, 153, 108);
+    transition: 0.8s;
+}
+
+#container button:hover{
+
+}
+
+.line{
+    width: 70%;
+    margin: 2.5rem auto;
+}
+
+#container img{
+    width: 80%;
+    margin-left: 50px;
+}
+
+#container-cofre {
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%),url(imagens/img\ cofre\ fundo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    padding: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container-cofre img{
+    width: 20rem;
+    height: auto;
+    margin-top: 9rem;
+}
+
+#container-cofre h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#container-cofre p{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+footer{
+background-color: rgb(26, 25, 25);
+padding: 5rem;
+text-align: center;
+}
+
+footer img{
+   width: 18rem;
+}
+
+footer div{
+    display: flex;
+    padding: 1rem;
+    color: white;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: purple;
+    transition: 0.6s;
+}
+
+/* .color1 { #4c84ac };
+.color2 { #b0d0dc };
+.color3 { #28465b };
+.color4 { #578dab };
+.color5 { #aec4c7 }; */
+
+/* aulinha sobre unidade de medidas */
+
+/* px é uma unidade de medida de tamanho fixo.
+tamanho padrão do paragrafo é 16 px*/
+
+/* em - Ele trabalha em relação ao tamanho da font do elemento pai (padrão) (de forma especifica esta unidade de medida multiplica o tamanho da fonte do elemento pai no que voce esta solicitando) */
+
+/* rem - Root em = ele vai depender do elemento pai de tudo (HTML) Documento principal da página */
+/* font-size 62.5%; | é = a 10px mais usual usar este paramêtro para contagem */
+
+/* vh - viewport height (altura) tamanho em relação a tela do usuário (trabalha como se fosse porcentagem) */
+
+/* vw - viewport width (largura) tamanho em relação da tela do usuário (trabalha como se fosse porcentagem) */
+
+/* cssgradient.io */
